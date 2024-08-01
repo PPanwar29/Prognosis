@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeavensGate - Job Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formSubmit.css" />
+
+    <style>
+
+      /* <!-- loader animation start--> */
+      #div1 {
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+            border-radius: 50%;
+            border-top: 5px solid blue;
+            animation-name: circle;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            /* animation-direction: ; */
+            animation-timing-function: linear;
+        }
+
+        @keyframes circle {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #loader-wrapper {
+            width: 100vw;
+            background-color: #3180907d;
+            height: 100vh;
+            
+        }
+
+        #blur {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0 234 255 / 46%)
+        }
+        #loader-container{
+          display: none;
+          background-image: url("../manas/Doctors-bro.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+      /* <!-- loader animatin end --> */
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div id="thename">
+        <h1>HeavensGate</h1>
+        <p>Healthcare Services</p>
+      </div>
+
+      <div class="container">
+        <nav class="nav">
+          <ul>
+            <li><a href="../manas/index.html">Home</a></li>
+            <li><a href="../manas/index.html#about">About</a></li>
+            <li><a href="../manas/index.html#facility">Facility</a></li>
+            <li><a href="../manas/index.html#review">Review</a></li>
+            <li><a href="../manas/index.html#contact">Contact</a></li>
+            <li><a href="../manas/index.html#post">Post</a></li>
+            <li><a href="./index.html">Recruitment</a></li>
+            <li><a href="../ritu/login.html">Logout</a></li>
+          </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+      </div>
+    </header>
+
+
+    <!-- this is a loader added at end  -->
+
+
+  
+    <!-- this is a loader added at end  -->
+
+    <div id="loader-container" >
+
+      <div id="loader-wrapper">
+          <div id="blur">
+              <div id="div1">
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- end of loader -->
+    <!-- end of loader -->
+
+    <!-- here is the after submit task -->
+    <div id="the-wrapper">
+      <div class="confirmation-container">
+        <h2>Form Submission Successful</h2>
+        <p>
+          We appreciate your interest in HeavensGate Healthcare Services. Your
+          form has been successfully submitted. We look forward to reviewing
+          your application. Thank you for filling the form!
+        </p>
+
+        <div class="button-container">
+          <a href="../manas/index.html" class="button" onclick="redirectToHome()">Home</a>
+          <!-- You can add more buttons as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- here is the end of after submit -->
+
+    <main id="main1">
+      <h2>Job Application</h2>
+
+      <form onsubmit="return false;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="position">Position Applying For:</label>
+        <select id="position" name="position" required>
+          <option value="">Select Position</option>
+          <option value="nurse">Nurse</option>
+          <option value="doctor">Doctor</option>
+          <option value="therapist">Therapist</option>
+          <option value="other">Other (please specify in resume)</option>
+        </select>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" required />
+
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="5"></textarea>
+        <a href="./formSubmit.html">
+          <button type="submit" onclick="formSubmit()">
+            Submit Application
+          </button>
+        </a>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 HeavensGate Healthcare Services</p>
+    </footer>
+  </body>
+  <script>
+    function formSubmit() {
+      const name = document.getElementById("firstName").value;
+      const gmail = document.getElementById("email").value;
+      const phonenumber = document.getElementById("phone").value;
+      const position = document.getElementById("position").value;
+      const resume = document.getElementById("resume").value;
+      console.log(
+        `the name ${name}  email ${gmail}  number ${phonenumber}  positon ${position} resume ${resume}`
+      );
+      if (name && gmail && phonenumber && position && resume) {
+
+        document.getElementById("loader-container").style.display="block"
+        document.getElementById("main1").style.display = "none";
+
+        setTimeout(()=>{
+
+          document.getElementById("the-wrapper").style.display = "flex";
+        },3000)
+      }
+    }
+
+    function redirectToHome() {
+      document.getElementById("loader-container").style.display="none"
+      document.getElementById("main1").style.display = "block";
+      document.getElementById("the-wrapper").style.display = "none";
+     document.getElementById("firstName").value="";
+       document.getElementById("lastName").value="";
+
+       document.getElementById("email").value="";
+       document.getElementById("phone").value="";
+      document.getElementById("position").value="";
+      document.getElementById("resume").value="";
+    }
+  </script>
+</html>
