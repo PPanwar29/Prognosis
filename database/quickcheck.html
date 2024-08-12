@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .radio-group {
+      display: flex;
+      align-items: center;
+    }
+    .radio-group label {
+      margin-right: 10px;
+    }
+    input[type="radio"] {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Prediction Form</h1>
+    <form id="diabetesForm">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+<br>
+
+      <div class="radio-group">
+        <label for="anemia">Anemia:</label>
+        <input type="radio" id="anemiaYes" name="anemia" value="yes" required>
+        <label for="anemiaYes">Yes</label>
+        <input type="radio" id="anemiaNo" name="anemia" value="no" required>
+        <label for="anemiaNo">No</label>
+      </div>
+<br>
+      <label for="creatine">Creatine Phosphate Level (mg/dl):</label>
+      <input type="number" id="creatine" name="creatine" required>
+      <br>
+      <div class="radio-group">
+        <label for="diabetes">Diabetes:</label>
+        <input type="radio" id="diabetesYes" name="diabetes" value="yes" required>
+        <label for="diabetesYes">Yes</label>
+        <input type="radio" id="diabetesNo" name="diabetes" value="no" required>
+        <label for="diabetesNo">No</label>
+      </div>
+      <br>
+      <label for="ejectionFraction">Ejection Fraction (%):</label>
+      <input type="number" id="ejectionFraction" name="ejectionFraction" required>
+      <br>
+      <div class="radio-group">
+        <label for="bloodPressure">High Blood Pressure:</label>
+        <input type="radio" id="bloodPressureYes" name="bloodPressure" value="yes" required>
+        <label for="bloodPressureYes">Yes</label>
+        <input type="radio" id="bloodPressureNo" name="bloodPressure" value="no" required>
+        <label for="bloodPressureNo">No</label>
+      </div>
+      <br>
+      <label for="plateletCount">Platelet Count (kilo plates/ml):</label>
+      <input type="number" id="plateletCount" name="plateletCount" required>
+      <br>
+      <label for="serumCreatinine">Serum Creatinine (mg/dl):</label>
+      <input type="number" id="serumCreatinine" name="serumCreatinine" required>
+      <br>
+      <label for="serumSodium">Serum Sodium (mEq/L):</label>
+      <input type="number" id="serumSodium" name="serumSodium" required>
+      <br>
+      <div class="radio-group">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+      </div>
+      <br>
+      <div class="radio-group">
+        <label for="smoker">Smoker:</label>
+        <input type="radio" id="smokerYes" name="smoker" value="yes" required>
+        <label for="smokerYes">Yes</label>
+        <input type="radio" id="smokerNo" name="smoker" value="no" required>
+        <label for="smokerNo">No</label>
+      </div>
+      <br>
+      <!-- <label for="menstrualCycle">Menstrual Cycle Length (days):</label>
+      <input type="number" id="menstrualCycle" name="menstrualCycle" required> -->
+
+      <input type="submit" value="Predict">
+    </form>
+  </div>
+</body>
+</html>

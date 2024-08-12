@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prognosis-Appointment form</title>
+    <link rel="stylesheet" href="../anmol/style.css" />
+    <!-- <link rel="stylesheet" href="formSubmit.css" /> -->
+
+    
+
+  </head>
+  <body>
+    <header>
+      <div id="thename">
+        <h1><span style="color: #0188DF;">P</span>rognosis <span style="color: #0188DF;">T</span>ech</h1>
+        <p>Healthcare Services</p>
+      </div>
+
+      <div class="container">
+        <nav class="nav">
+          <ul>
+            <li><a href="../manas/index.html">Home</a></li>
+            <li><a href="../manas/index.html#about">About</a></li>
+            <li><a href="../manas/index.html#facility">Facility</a></li>
+            <li><a href="../manas/index.html#review">Review</a></li>
+            <li><a href="../manas/index.html#contact">Contact</a></li>
+            <li><a href="../manas/index.html#post">Post</a></li>
+            <li><a href="./index.html">Recruitment</a></li>
+            <li><a href="../ritu/login.html">Logout</a></li>
+          </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+      </div>
+    </header>
+
+
+   
+
+    <main id="main1">
+      <h2>Make an appointment</h2>
+
+      <form onsubmit="return false;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="position">Time slot:</label>
+        <select id="position" name="position" required>
+          <option value="">Select Position</option>
+          <option value="nurse">6-9</option>
+          <option value="doctor">9-12</option>
+          <option value="therapist">12-3</option>
+          <option value="other">3-6</option>
+          <option value="other">6-9</option>
+        </select>
+
+        <label for="resume">Select Date</label>
+        <input type="date">
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="5"></textarea>
+        <a href="./formSubmit.html">
+          <button type="submit" onclick="formSubmit()">
+            Book appointment
+          </button>
+        </a>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 HeavensGate Healthcare Services</p>
+    </footer>
+  </body>
+  <script>
+    function formSubmit() {
+      const name = document.getElementById("firstName").value;
+      const gmail = document.getElementById("email").value;
+      const phonenumber = document.getElementById("phone").value;
+      const position = document.getElementById("position").value;
+      const resume = document.getElementById("resume").value;
+      console.log(
+        `the name ${name}  email ${gmail}  number ${phonenumber}  positon ${position} resume ${resume}`
+      );
+      if (name && gmail && phonenumber && position && resume) {
+
+        document.getElementById("loader-container").style.display="block"
+        document.getElementById("main1").style.display = "none";
+
+        setTimeout(()=>{
+
+          document.getElementById("the-wrapper").style.display = "flex";
+        },3000)
+      }
+    }
+
+    function redirectToHome() {
+      document.getElementById("loader-container").style.display="none"
+      document.getElementById("main1").style.display = "block";
+      document.getElementById("the-wrapper").style.display = "none";
+     document.getElementById("firstName").value="";
+       document.getElementById("lastName").value="";
+
+       document.getElementById("email").value="";
+       document.getElementById("phone").value="";
+      document.getElementById("position").value="";
+      document.getElementById("resume").value="";
+    }
+  </script>
+</html>
