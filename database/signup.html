@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body>
+  <div id="signup-wrapper">
+    <div id="signup-container">
+      <form id="signup-form" action="signup.php" method="post">
+        <div id="signup-details">
+          <div id="signup-welcome">
+            <p>Create a New Account</p>
+          </div>
+          <div>
+            <input type="text" name="firstname" placeholder="Username" required />
+          </div>
+          
+          <div>
+            <input type="email" name="email" placeholder="Email (required)" required />
+          </div>
+          <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <input type="date" id="dob" name="dob" />
+          </div>
+          <div>
+            <input type="text" name="city" placeholder="City (required)" required />
+          </div>
+          <div>
+            <input type="text" name="state" placeholder="State (required)" required />
+          </div>
+          <div>
+            <input type="tel" name="phone" placeholder="Phone Number (required)" required />
+          </div>
+          <div>
+            <input type="password" name="password" placeholder="Password (required)" required />
+          </div>
+          <div>
+            <button type="submit">Sign up</button>
+          </div>
+        </div>
+      </form>
+      <div id="signup-pic">
+        <div id="imgcontain"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

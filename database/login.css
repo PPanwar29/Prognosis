@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+* {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee; /*use this in last*/
+  background-color: #0033e9;
+  background-image: linear-gradient(315deg, #0033e9 0%, #d08097 65%);
+
+  /* background-color: aqua; */
+}
+#login-container {
+  position: absolute;
+  z-index: 2;
+  width: 85%;
+  height: 80%;
+  background-color: white;
+
+  border: 2px solid rgba(0, 0, 0, 0.37);
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#helloUser {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.342);
+  /* background-color: violet; */
+  height: 2rem;
+}
+#loginForm {
+  /* margin: 5px; */
+  display: flex;
+  height: calc(100% - 2rem);
+  border-radius: 10px;
+  width: 100%;
+  /* border: dashed 2px pink; */
+  box-sizing: border-box;
+  padding: 2px;
+}
+#login-form,
+#pic {
+  margin-right: 0.5%;
+  width: 50%;
+  box-sizing: border-box;
+  height: 100%;
+  /* background-color: pink; */
+  border-radius: 10px;
+  /* background-color: yellow; */
+  padding: 25px;
+}
+#imgcontain {
+  background-image: url("https://integrativemedical.org/wp-content/uploads/2021/02/blog-img3-1.jpeg");
+  /* change this link to change th pic  */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  /* background-color: purple; */
+}
+#login-contain {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  /* background-color: blue; */
+  background-color: white;
+  /* display: flex;
+          flex-direction: column; */
+}
+#details {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+#someError {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+#circle-wrap1 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 1;
+  overflow: hidden;
+}
+#circle-wrap2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 1;
+  overflow: hidden;
+}
+#bubble1 {
+  width: 100%;
+  height: 100%;
+  background-color: #ffc0dc;
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  right: -30%;
+}
+
+#bubble2 {
+  width: 100%;
+  height: 100%;
+  background-color: #2f4159;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15%;
+  left: -25%;
+}
+
+#or {
+  position: relative;
+  /* font-size: 100px; */
+  background-color: white;
+  width: 30px;
+  height: 1.3rem;
+  top: -3%;
+  left: 45%;
+  box-sizing: border-box;
+  /* padding-left: 4px; */
+}
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.margin-details-box {
+  margin: 3.5px;
+}
+
+input {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  /* background-color: aqua; */
+  /* border-bottom: 2px solid black; */
+}
+button {
+  width: 100%;
+  display: flex;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  /* background-color: #2f4159; */
+  background-color: #2f4159;
+background-image: linear-gradient(90deg, #2f4159 0%, #ffc0dc 73%);
+
+  border: none;
+  color: black;
+}
+
+
+
+input:focus {
+  border-bottom: 2px solid black;
+  background-color: #00aeff0d;
+}
+
+#throughSocial >a{
+    margin: 15px;
+    font-size: 1.5rem;
+    
+}
+
+
+#getApp{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  /* box-sizing: border-bo; */
+  /* background-color: #d08097; */
+  padding: 2px;
+}
+
+#playstore ,#appstore {
+  width: 50%;
+  height: 100%;
+  margin-right: 5px;
+  /* background-color: #fff; */
+}
+
+#playstore{
+  background-image: url("../imgs/WhatsApp\ Image\ 2023-11-26\ at\ 7.38.57\ PM.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#appstore{
+  background-image: url("https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 400px){
+  #login-form {
+  margin-right: 0.5%;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  /* background-color: pink; */
+  border-radius: 10px;
+  /* background-color: yellow; */
+  padding: 5px;
+}
+
+#pic{
+  display: none;
+}
+
+
+
+#details {
+  height: 50.1%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+input{
+  margin: 10px;
+}
+#or {
+     position: relative;
+    
+    background-color: white;
+    width: 30px;
+    height: 1.3rem;
+    top: -1%;
+    left: 39%;
+    box-sizing: border-box;
+    
+}
+}
+
+
+
+/* after gpt */
+#someError {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#errorText {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#throughSocial {
+  margin: 15px;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+#throughSocial a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #557ec3;
+}
+
+#throughSocial i {
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+#throughSocial i:hover {
+  color: #0033e9; /* Change the color on hover as needed */
+}
+
+#forgetPass {
+  margin-bottom: 10px;
+}
+
+#dontaccount {
+  margin-top: auto; /* Push this section to the bottom */
+}
+
+#dontaccount a {
+  color: #0033e9; /* Adjust the link color as needed */
+}
+
+
+
+/* gpt-2 */
+#someError {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#errorText {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff; /* Change text color to white or your preferred color */
+}
+
+#throughSocial {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#throughSocial a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #557ec3;
+}
+
+#throughSocial i {
+  font-size: 2.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+#throughSocial i:hover {
+  color: #0033e9;
+}
+
+#forgetPass {
+  margin-bottom: 20px;
+}
+
+#dontaccount {
+  margin-top: auto;
+}
+
+#dontaccount a {
+  color: #0033e9;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+#dontaccount a:hover {
+  color: #ffc0dc; /* Change the color on hover as needed */
+}
+
+#getApp {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#playstore,
+#appstore {
+  width: 60%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 400px) {
+  #playstore,
+  #appstore {
+    width: 80%;
+  }
+}
