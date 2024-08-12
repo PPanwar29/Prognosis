@@ -33,6 +33,37 @@ Prognosis Healthcare Solutions is an innovative online platform designed to brid
 ![Screenshot 2024-08-09 204509](https://github.com/user-attachments/assets/f8416cda-0b6e-4e98-b23c-18181b73a46e)
 ![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.04_89fd6525.jpg?raw=true)
 
+
+## Installation
+
+To get started, clone the repository and install the dependencies:
+
+To run this project locally, follow these steps:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/PPanwar29/prognosis.git
+   cd prognosis
+
+2. **Create a Virtual Environment and Activate It**
+    ```bash
+   python -m venv venv
+    source venv/Scripts/activate
+2. **Install the Dependencies**
+    ```bash
+   Eg.= pip install -r numpy
+        pip install -r scikit-learn
+    (all req is in requirements.txt, directly install it)
+    
+## Usage/Examples
+
+1. **Run Flask**
+   ```bash
+    python app.py
+1. **Open the Application in Your Browser**
+Go to link provided in your web browser.
+Enter the required input features for any prediction and click "Predict".
+
 ## TechStack
 ![Screenshot 2024-08-12 160357](https://github.com/user-attachments/assets/b49ecb05-9088-4379-a656-4243a37ab1e5)
 
