@@ -27,11 +27,13 @@ Prognosis Healthcare Solutions is an innovative online platform designed to brid
 
 ## Screenshots
 
-![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.06_b7c8b60d.jpg?raw=true)
-![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.04_89fd6525.jpg?raw=true)
-![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.05_01e0d8ea.jpg?raw=true)
-![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.14_052db0bc.jpg?raw=true)
 ![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.15_aa6d6836.jpg?raw=true)
+![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.14_052db0bc.jpg?raw=true)
+![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.06_b7c8b60d.jpg?raw=true)
+
+![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.05_01e0d8ea.jpg?raw=true)
+
+![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.04_89fd6525.jpg?raw=true)
 
 ## TechStack
 ![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/Screenshot%202024-08-12%20160357.png?raw=true)
