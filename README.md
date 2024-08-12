@@ -34,7 +34,8 @@ Prognosis Healthcare Solutions is an innovative online platform designed to brid
 ![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/WhatsApp%20Image%202024-08-11%20at%2013.34.04_89fd6525.jpg?raw=true)
 
 ## TechStack
-![App Screenshot](https://github.com/PPanwar29/Prognosis/blob/main/Screenshot%202024-08-12%20160357.png?raw=true)
+![Screenshot 2024-08-12 160357](https://github.com/user-attachments/assets/b49ecb05-9088-4379-a656-4243a37ab1e5)
+
 ## Authors
 
 - [@PPanwar29](https://github.com/PPanwar29) : pspanwar2972@gmail.com
