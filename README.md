@@ -74,4 +74,5 @@ Enter the required input features for any prediction and click "Predict".
 - [@RituRaj1801](https://github.com/RituRaj1801) : rituraj995kumar@gmail.com
 - [@anmolsharma1888](https://github.com/anmolsharma1888) : anmol.sharma06082003@gmail.com
 
-
+## NOTE
+Website link may not work due to inactivity on render which is used for deployment
