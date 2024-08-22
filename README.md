@@ -72,6 +72,7 @@ Enter the required input features for any prediction and click "Predict".
 - [@PPanwar29](https://github.com/PPanwar29) : pspanwar2972@gmail.com
 - [@ManasBhunya23](https://github.com/ManasBhunya23) : manasbhunya2391@gmail.com
 - [@RituRaj1801](https://github.com/RituRaj1801) : rituraj995kumar@gmail.com
+- [@anmolsharma1888](https://github.com/anmolsharma1888) : anmol.sharma06082003@gmail.com
 
 ## NOTE
 Website link may not work due to inactivity on render which is used for deployment
